@@ -1,8 +1,12 @@
 const Student = (props) => {
   return ( 
     <>
-    <h2>student component</h2>
+    <div>
+    <h1>{props.student.name}</h1>
+    <p>{props.student.bio}</p>
+    </div>
     </>
+    
 );
 }
 
