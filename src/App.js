@@ -6,7 +6,7 @@ import StudentList from './StudentList';
 function App() {
 const [studentList, setStudentList] = useState(studentData)
   return (
-    <div>
+    <div className='App'>
       <StudentList studentList={studentList}/>
     </div>
   );

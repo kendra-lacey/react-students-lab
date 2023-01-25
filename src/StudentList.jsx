@@ -1,11 +1,11 @@
 import Student from "./Student";
 
-const StudentList = (props) => {
+const StudentList = ({studentList}) => {
   return ( 
     <>
     <div>
       <h1>This is a Student List</h1>
-      {props.studentList.map (student => 
+      {studentList.map (student => 
         <Student key={student.id} student={student}/>
       )}
     </div>

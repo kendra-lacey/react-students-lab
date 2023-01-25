@@ -1,10 +1,16 @@
-import Score from "./Score";
+// import Score from "./Score";
 
-const Scores = (props) => {
+const Scores = ({scores}) => {
   return ( 
     <>
-    {props.scores.map (score => 
-        <Score key={score.id} score={score}/>
+    {scores.map(score => {
+      return(
+      <div>
+      <p>{score.date}</p>
+      <p>{score.score}</p>
+      </div>
+      )
+    }
     )}
     </>
   );
